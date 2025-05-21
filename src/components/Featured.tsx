@@ -2,8 +2,10 @@ import { featuredProducts } from "@/data";
 import SingleProductPage from "@/product/SingleProductpage";
 import Image from "next/image";
 import React from "react";
+import Price from "./Price";
 
 const Featured = () => {
+  console.log("Image...", featuredProducts)
   return (
     <div className="w-screen overflow-x-scroll text-red-500">
       {/* WRAPPER */}
@@ -20,23 +22,38 @@ const Featured = () => {
                 <Image src={item.img} alt="" fill className="object-contain" sizes="60vw" />
               </div>
             )}
+
+            {/* <div className="relative w-full h-[300px] hover:rotate-[60deg] transition-transform duration-500">
+  <Image
+    src={item.img}
+    alt=""
+    fill
+    className="object-contain"
+    sizes="60vw"
+  />
+</div> */}
+            
             {/* TEXT CONTAINER */}
             <div className=" flex-1 flex flex-col items-center justify-center text-center gap-4">
               <h1 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">{item.title}</h1>
               <p className="p-4 2xl:p-8">{item.desc}</p>
-              <span className="text-xl font-bold">${item.price}</span>
+              {/* <span className="text-xl font-bold">${item.price}</span> */}
+              {/* <div className="h-1/2 flex flex-col gap-4 md:h-[70%] md:justify-center md:gap-6 xl:gap-8"> */}
+              <Price price={item.price} id={item.id} options={item.options} />
+              {/* </div> */}
+            
 
-               <SingleProductPage /> 
-              <div className="flex space-x-2">
+               {/* <SingleProductPage />  */}
+              {/* <div className="flex space-x-2">
                 {item.options &&
                   item.options.map((option, index) => (
                     <span key={index} className="badge bg-grey-200 rounded px-2 py-1 text-sm">
                       {option.title}
                     </span>
                   ))}
-              </div>
+              </div> */}
 
-              <button className="bg-red-500 text-white p-2 rounded-md">Add to Cart</button>
+              {/* <button className="bg-red-500 text-white p-2 rounded-md">Add to Cart</button> */}
             </div>
           </div>
         ))}

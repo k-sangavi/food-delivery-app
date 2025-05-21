@@ -29,7 +29,7 @@ const Navbar = () => {
           <span>123 456 789</span>
         </div>
         {!user ? <Link href="/login">Login</Link> : <Link href="/orders">Orders</Link>}
-        <Carticon />
+        <Carticon /> 
       </div>
     </div>
   );

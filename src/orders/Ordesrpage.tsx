@@ -1,20 +1,93 @@
-<<<<<<< HEAD
-import React from 'react'
+/*import React from "react";
 
-const Orderspage = () => {
+const OrdersPage = () => {
   return (
-    <div>Orderspage</div>
-  )
-}
+    <div className="p-4 lg:px-20 xl:px-40">
+      <table className="w-full border-separate border-spacing-3">
+        <thead>
+          <tr className="text-left">
+            <th className="hidden md:block">Order ID</th>
+            <th>Date</th>
+            <th>Price</th>
+            <th className="hidden md:block">Products</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="text-sm md:text-base bg-red-50">
+            <td className="hidden md:block py-6 px-1">1237861238171</td>
+            <td className="py-6 px-1">14.05.2025</td>
+            <td className="py-6 px-1">89.90</td>
+            <td className="hidden md:block py-6 px-1">Big Burger Menu (2), Veggie Pizza (2), Coca Cola 1L (2)</td>
+            <td className="py-6 px-1">On the way (approx. 10min)...</td>
+          </tr>
+          <tr className="text-sm md:text-base odd:bg-gray-100">
+            <td className="hidden md:block py-6 px-1">1237861238381</td>
+            <td className="py-6 px-1">18.05.2025</td>
+            <td className="py-6 px-1">117.60</td>
+            <td className="hidden md:block py-6 px-1">Garlic Parmesan Linguine (2), Hawaiian Teriyaki (2) </td>
+            <td className="py-6 px-1">On the way (approx. 10min)...</td>
+          </tr>
+          <tr className="text-sm md:text-base odd:bg-gray-100">
+            <td className="hidden md:block py-6 px-1">1237861238419</td>
+            <td className="py-6 px-1">23.05.2025</td>
+            <td className="py-6 px-1">109.60</td>
+            <td className="hidden md:block py-6 px-1">Sicilian (2), Bacon Deluxe (2)</td>
+            <td className="py-6 px-1">On the way (approx. 10min)...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
-=======
-import React from 'react'
+export default OrdersPage;*/
 
-const Orderspage = () => {
+
+
+
+// OrdersPage.js
+import React from "react";
+
+const OrdersPage = () => {
   return (
-    <div>Orderspage</div>
-  )
-}
+    <div className="p-4 lg:px-20 xl:px-40">
+      <table className="w-full border-separate border-spacing-3">
+        <thead>
+          <tr className="text-left">
+            <th className="hidden md:block">Order ID</th>
+            <th>Date</th>
+            <th>Price</th>
+            <th className="hidden md:block">Products</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="text-sm md:text-base bg-red-50">
+            <td className="hidden md:block py-6 px-1">1237861238171</td>
+            <td className="py-6 px-1">14.05.2025</td>
+            <td className="py-6 px-1">89.90</td>
+            <td className="hidden md:block py-6 px-1">Big Burger Menu (2), Veggie Pizza (2), Coca Cola 1L (2)</td>
+            <td className="py-6 px-1">On the way (approx. 10min)...</td>
+          </tr>
+          <tr className="text-sm md:text-base odd:bg-gray-100">
+            <td className="hidden md:block py-6 px-1">1237861238381</td>
+            <td className="py-6 px-1">18.05.2025</td>
+            <td className="py-6 px-1">117.60</td>
+            <td className="hidden md:block py-6 px-1">Garlic Parmesan Linguine (2), Hawaiian Teriyaki (2)</td>
+            <td className="py-6 px-1">On the way (approx. 10min)...</td>
+          </tr>
+          <tr className="text-sm md:text-base odd:bg-gray-100">
+            <td className="hidden md:block py-6 px-1">1237861238419</td>
+            <td className="py-6 px-1">23.05.2025</td>
+            <td className="py-6 px-1">109.60</td>
+            <td className="hidden md:block py-6 px-1">Sicilian (2), Bacon Deluxe (2)</td>
+            <td className="py-6 px-1">On the way (approx. 10min)...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
->>>>>>> c3752473598868eebb0b2f0c55530905d854966b
-export default Orderspage
+export default OrdersPage;

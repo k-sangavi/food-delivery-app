@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import Cartpage from "@/cart/Cartpage";
 
 const Carticon = () => {
   return (
@@ -8,7 +9,9 @@ const Carticon = () => {
       <div className="relative w-8 h-8 md:w-5 md:h-5">
         <Image src="/cart.png" alt="cart" fill sizes="(max-width:768px) 100vw, 50vw" />
       </div>
-      <span>Cart (3)</span>
+      <span>
+        Cart (3) 
+        </span>
     </Link>
   );
 };
